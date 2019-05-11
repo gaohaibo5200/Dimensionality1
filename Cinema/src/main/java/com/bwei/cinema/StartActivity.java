@@ -39,9 +39,9 @@ public class StartActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         if (num == 0) {
-                            /*Intent intent = new Intent(StartActivity.this, A.class);
-                            startActivity(intent);*/
-                            Toast.makeText(StartActivity.this, "跳转", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(StartActivity.this, LoginActivity.class);
+                            startActivity(intent);
+                            //Toast.makeText(StartActivity.this, "跳转", Toast.LENGTH_SHORT).show();
                             overridePendingTransition(R.anim.anim_in, R.anim.anim_out);
                             finish();
                             mTimer.cancel();
